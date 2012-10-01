@@ -1,5 +1,8 @@
 Cardinform::Application.routes.draw do
-  get "products/show"
+
+  root to: 'pages#home'
+  match '/about',     to: 'pages#about'
+  match '/privacy',   to: 'pages#privacy'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
